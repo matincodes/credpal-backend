@@ -5,7 +5,6 @@ import { generateTokenPair } from '../../services/token.services.js';
 import { setAuthCookies, clearAuthCookies } from '../../utils/cookie.js';
 import { AppError } from '../../utils/appError.js';
 import type { IUser } from '../users/users.interface.js';
-import { de } from 'zod/locales';
 
 // 1. REGISTER
 export const register = async (req: Request, res: Response, next: NextFunction) => {

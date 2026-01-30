@@ -30,7 +30,7 @@ export const sendReminderEmail = async ({
 }: EmailData & { email: string }) => {
   
   // 1. Find the correct template based on daysLeft
-  // We use .find() to match the 'daysLeft' property we added to the array
+  // Use .find() to match the 'daysLeft' property we added to the array
   const template = emailTemplates.find(t => t.daysLeft === daysLeft);
 
   if (!template) {
