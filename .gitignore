@@ -19,3 +19,5 @@ yarn.lock
 .yarn
 .pnp.*
 .pnp.js
+logs
+*.log

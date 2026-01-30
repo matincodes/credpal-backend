@@ -66,3 +66,39 @@
 {"level":"info","message":"🚀 Server is running on port 8080","service":"credpal-backend","timestamp":"2026-01-30 12:37:06"}
 {"level":"info","message":"🌍 Environment: development","service":"credpal-backend","timestamp":"2026-01-30 12:37:06"}
 {"level":"info","message":"📄 Swagger Docs: http://localhost:8080/api-docs","service":"credpal-backend","timestamp":"2026-01-30 12:37:06"}
+{"level":"error","message":"Error connecting to MongoDB: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","service":"credpal-backend","timestamp":"2026-01-30 21:03:24"}
+{"level":"info","message":"MongoDB Connected: ac-ht93ubb-shard-00-00.wqp9vhd.mongodb.net","service":"credpal-backend","timestamp":"2026-01-30 21:06:00"}
+{"level":"info","message":"✅ Reminder Scheduler initialized","service":"credpal-backend","timestamp":"2026-01-30 21:06:01"}
+{"level":"info","message":"🚀 Server is running on port 8080","service":"credpal-backend","timestamp":"2026-01-30 21:06:01"}
+{"level":"info","message":"🌍 Environment: development","service":"credpal-backend","timestamp":"2026-01-30 21:06:01"}
+{"level":"info","message":"📄 Swagger Docs: http://localhost:8080/api-docs","service":"credpal-backend","timestamp":"2026-01-30 21:06:01"}
+{"level":"info","message":"MongoDB Connected: ac-ht93ubb-shard-00-00.wqp9vhd.mongodb.net","service":"credpal-backend","timestamp":"2026-01-30 21:15:38"}
+{"level":"info","message":"✅ Reminder Scheduler initialized","service":"credpal-backend","timestamp":"2026-01-30 21:15:38"}
+{"level":"info","message":"🚀 Server is running on port 8080","service":"credpal-backend","timestamp":"2026-01-30 21:15:38"}
+{"level":"info","message":"🌍 Environment: development","service":"credpal-backend","timestamp":"2026-01-30 21:15:38"}
+{"level":"info","message":"📄 Swagger Docs: http://localhost:8080/api-docs","service":"credpal-backend","timestamp":"2026-01-30 21:15:38"}
+{"level":"info","message":"MongoDB Connected: ac-ht93ubb-shard-00-00.wqp9vhd.mongodb.net","service":"credpal-backend","timestamp":"2026-01-30 21:20:19"}
+{"level":"info","message":"✅ Reminder Scheduler initialized","service":"credpal-backend","timestamp":"2026-01-30 21:20:19"}
+{"level":"info","message":"🚀 Server is running on port 8080","service":"credpal-backend","timestamp":"2026-01-30 21:20:19"}
+{"level":"info","message":"🌍 Environment: development","service":"credpal-backend","timestamp":"2026-01-30 21:20:19"}
+{"level":"info","message":"📄 Swagger Docs: http://localhost:8080/api-docs","service":"credpal-backend","timestamp":"2026-01-30 21:20:19"}
+{"level":"info","message":"MongoDB Connected: ac-ht93ubb-shard-00-02.wqp9vhd.mongodb.net","service":"credpal-backend","timestamp":"2026-01-30 21:22:29"}
+{"level":"info","message":"✅ Reminder Scheduler initialized","service":"credpal-backend","timestamp":"2026-01-30 21:22:29"}
+{"level":"info","message":"🚀 Server is running on port 8080","service":"credpal-backend","timestamp":"2026-01-30 21:22:29"}
+{"level":"info","message":"🌍 Environment: development","service":"credpal-backend","timestamp":"2026-01-30 21:22:29"}
+{"level":"info","message":"📄 Swagger Docs: http://localhost:8080/api-docs","service":"credpal-backend","timestamp":"2026-01-30 21:22:29"}
+{"level":"info","message":"MongoDB Connected: ac-ht93ubb-shard-00-02.wqp9vhd.mongodb.net","service":"credpal-backend","timestamp":"2026-01-30 21:22:41"}
+{"level":"info","message":"✅ Reminder Scheduler initialized","service":"credpal-backend","timestamp":"2026-01-30 21:22:41"}
+{"level":"info","message":"🚀 Server is running on port 8080","service":"credpal-backend","timestamp":"2026-01-30 21:22:41"}
+{"level":"info","message":"🌍 Environment: development","service":"credpal-backend","timestamp":"2026-01-30 21:22:41"}
+{"level":"info","message":"📄 Swagger Docs: http://localhost:8080/api-docs","service":"credpal-backend","timestamp":"2026-01-30 21:22:41"}
+{"level":"info","message":"MongoDB Connected: ac-ht93ubb-shard-00-00.wqp9vhd.mongodb.net","service":"credpal-backend","timestamp":"2026-01-30 21:27:20"}
+{"level":"info","message":"✅ Reminder Scheduler initialized","service":"credpal-backend","timestamp":"2026-01-30 21:27:20"}
+{"level":"info","message":"🚀 Server is running on port 8080","service":"credpal-backend","timestamp":"2026-01-30 21:27:20"}
+{"level":"info","message":"🌍 Environment: development","service":"credpal-backend","timestamp":"2026-01-30 21:27:20"}
+{"level":"info","message":"📄 Swagger Docs: http://localhost:8080/api-docs","service":"credpal-backend","timestamp":"2026-01-30 21:27:20"}
+{"level":"info","message":"MongoDB Connected: ac-ht93ubb-shard-00-02.wqp9vhd.mongodb.net","service":"credpal-backend","timestamp":"2026-01-30 21:30:28"}
+{"level":"info","message":"✅ Reminder Scheduler initialized","service":"credpal-backend","timestamp":"2026-01-30 21:30:29"}
+{"level":"info","message":"🚀 Server is running on port 8080","service":"credpal-backend","timestamp":"2026-01-30 21:30:29"}
+{"level":"info","message":"🌍 Environment: development","service":"credpal-backend","timestamp":"2026-01-30 21:30:29"}
+{"level":"info","message":"📄 Swagger Docs: http://localhost:8080/api-docs","service":"credpal-backend","timestamp":"2026-01-30 21:30:29"}
