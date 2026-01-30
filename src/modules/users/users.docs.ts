@@ -1,4 +1,4 @@
-import { registry } from '../../config/swagger.js';
+import { registry } from '../../config/swagger.registry.js';
 import { z } from 'zod';
 import { changePasswordSchema } from './users.validation.js';
 

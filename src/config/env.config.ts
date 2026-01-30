@@ -13,6 +13,7 @@ const envSchema = z.object({
     REFRESH_TOKEN_SECRET: z.string().min(1, 'REFRESH_TOKEN_SECRET is required'),
     ACCESS_TOKEN_EXPIRES_IN: z.string().default('15m'),
     REFRESH_TOKEN_EXPIRES_IN: z.string().default('7d'),
+    RESEND_API_KEY: z.string().min(1, 'RESEND_API_KEY is required'),
 });
 
 export const env = envSchema.parse(process.env);

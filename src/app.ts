@@ -9,10 +9,14 @@ import cookieParser from 'cookie-parser';
 import swaggerUi from 'swagger-ui-express';
 import passport from 'passport';
 import './config/passport.config.js';
-import { generateOpenAPIDocument } from './config/swagger.js';
+import { generateOpenAPIDocs } from './config/swagger.js';
 import { corsOptions } from './config/cors.config.js';
 import { arcjetMiddleware } from './middlewares/arcjet.middleware.js';
 import { errorHandler } from './middlewares/errorHandler.middleware.js';
+
+import authRoutes from './modules/auth/auth.routes.js';
+import userRoutes from './modules/users/users.routes.js';
+import subscriptionRoutes from './modules/subscriptions/subscriptions.routes.js'
 
 
 //Initialize Express App
@@ -45,8 +49,14 @@ app.use(errorHandler);
 //Passport Authentication Middleware
 app.use(passport.initialize());
 
+
+// API Routes
+app.use('/api/v1/auth', authRoutes);
+app.use('/api/v1/users', userRoutes);
+app.use('/api/v1/subscriptions', subscriptionRoutes);
+
 //Generate and Serve Swagger Documentation
-const openAPIDocument = generateOpenAPIDocument();
+const openAPIDocument = generateOpenAPIDocs();
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openAPIDocument));
 
 //Basic Route Check

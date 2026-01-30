@@ -1,30 +1,25 @@
-import { OpenApiGeneratorV3, OpenAPIRegistry } from '@asteasolutions/zod-to-openapi'
-import { z } from 'zod'
+import { OpenApiGeneratorV3 } from '@asteasolutions/zod-to-openapi';
+import { registry } from './swagger.registry.js'; // <--- Import from new file
 
-export const registry = new OpenAPIRegistry()
+// Import Module Documentations (Side-effects)
+import '../modules/auth/auth.docs.js';
+import '../modules/users/users.docs.js';
+import '../modules/subscriptions/subscriptions.docs.js';
 
-// Define Security Scheme
-registry.registerComponent('securitySchemes', 'bearerAuth', {
-    type: 'http',
-    scheme: 'bearer',
-    bearerFormat: 'JWT'
-})
+export const generateOpenAPIDocs = () => {
+  const generator = new OpenApiGeneratorV3(registry.definitions);
 
-
-export function generateOpenAPIDocument() {
-    const generator = new OpenApiGeneratorV3(registry.definitions)
-    return generator.generateDocument({
-        openapi: '3.0.0',
-        info: {
-            title: 'CredPal Backend API',
-            version: '1.0.0',
-            description: 'API documentation for CredPal Backend to manage Subscription and Payment services.'
-        },
-        servers: [
-            {
-                url: '/api/v1',
-                description: 'Main API Server'
-            }
-        ], 
-    })
-}
+  return generator.generateDocument({
+    openapi: '3.0.0',
+    info: {
+      title: 'SubDub API (CredPal Backend Assessment)',
+      version: '1.0.0',
+      description: 'API Documentation for the Subscription Management System',
+    },
+    servers: [
+      { url: 'http://localhost:3000/api/v1', description: 'Local Server' },
+    ],
+    
+    security: [{ bearerAuth: [] }],
+  });
+};
